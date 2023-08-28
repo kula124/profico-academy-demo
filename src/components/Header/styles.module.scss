@@ -1,0 +1,13 @@
+@mixin flex($arg: center, $arg2: center) {
+  display: flex;
+  align-items: $arg;
+  justify-content: $arg2;
+}
+
+.container {
+  @include flex(flex-start, flex-end);
+
+  .subContainer {
+    @include flex;
+  }
+}
