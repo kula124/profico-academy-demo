@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 // This can now be done with server actions:
 // https://codevoweb.com/learn-nextjs-server-actions-and-mutations-with-examples/
 
-// For the sake of HTTP requests demonstration, we will a traditional fetch -> response approach
+// For the sake of HTTP requests demonstration, we will do a traditional fetch -> response approach
 
 const changeEventHandlerFactory =
   (setter: React.Dispatch<React.SetStateAction<string>>) =>
