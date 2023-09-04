@@ -10,7 +10,8 @@ export async function GET(request: Request) {
   // Should get headers from request and check if the token is valid
   // If it is, return the user data
   // If not catch the error and return 401
-  const authHeader = request.headers.get("Authorization");
+  const headerList = headers();
+  const authHeader = headerList.get("Authorization");
 
   if (!authHeader) {
     return new NextResponse(

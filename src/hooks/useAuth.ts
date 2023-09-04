@@ -7,7 +7,7 @@ export enum UseUserError {
   Unknown = "Unknown",
 }
 
-const useUser = () => {
+const useAuth = () => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<UseUserError | null>(null);
@@ -39,4 +39,4 @@ const useUser = () => {
   return { user, loading, error };
 };
 
-export default useUser;
+export default useAuth;

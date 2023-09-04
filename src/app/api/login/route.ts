@@ -19,7 +19,7 @@ export async function POST(request: Request) {
   if (!body.email || !body.password) {
     return new NextResponse(
       JSON.stringify({
-        message: "Invalid email or password",
+        message: "Missing email or password",
       }),
       {
         status: 401,

@@ -1,9 +1,9 @@
 "use client";
 
-import useUser from "@/hooks/useUser";
+import useAuth from "@/hooks/useAuth";
 
 const ProfilePage = () => {
-  const { user, loading, error } = useUser();
+  const { user, loading, error } = useAuth();
 
   if (loading) return <div>Loading...</div>;
 
