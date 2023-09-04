@@ -57,7 +57,7 @@ export async function POST(request: Request) {
           email: user.email,
           role: user.role,
         },
-        process.env.JWT_SECRET as string
+        (process.env.JWT_SECRET as string) || "SECRET"
       ),
     }),
     {
